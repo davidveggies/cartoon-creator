@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rufus & Archibald</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="stage">
+        <div id="background"></div>
+        <div id="characters"></div>
+        <div id="overlay"></div>
+        <div id="dialogue-box" hidden>
+          <div id="speaker"></div>
+          <p id="dialogue-text"></p>
+          <button id="next-btn" type="button">Next ▶</button>
+        </div>
+        <div id="title-card" hidden>
+          <h1 id="title-text"></h1>
+          <p id="subtitle-text"></p>
+        </div>
+        <div id="story-panel" hidden>
+          <img id="story-panel-img" alt="" />
+          <p id="story-panel-caption"></p>
+          <button id="panel-next-btn" type="button">Continue ▶</button>
+        </div>
+      </div>
+      <div id="controls">
+        <button id="play-btn" type="button">▶ Play</button>
+        <button id="pause-btn" type="button" hidden>⏸ Pause</button>
+        <span id="scene-label">Scene 0 / 0</span>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
