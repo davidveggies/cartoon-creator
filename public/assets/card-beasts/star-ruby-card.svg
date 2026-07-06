@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 280" fill="none">
+  <rect x="8" y="8" width="184" height="264" rx="12" fill="#fff8e7" stroke="#1a1a1a" stroke-width="3"/>
+  <rect x="16" y="16" width="168" height="248" rx="8" fill="#f0e6ff" stroke="#7c3aed" stroke-width="2"/>
+  <text x="100" y="36" text-anchor="middle" font-family="Baloo 2, sans-serif" font-size="11" fill="#5b21b6" font-weight="700">STARUBY</text>
+  <text x="100" y="50" text-anchor="middle" font-family="Baloo 2, sans-serif" font-size="8" fill="#888"> COSMIC TYPE </text>
+  <!-- purple star -->
+  <path d="M100 78 L112 108 L144 108 L118 128 L128 160 L100 142 L72 160 L82 128 L56 108 L88 108 Z" fill="#7c3aed" stroke="#1a1a1a" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- gold ring -->
+  <circle cx="100" cy="118" r="18" fill="#ffd700" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- ruby core -->
+  <path d="M100 104 L108 118 L100 132 L92 118 Z" fill="#e0115f" stroke="#1a1a1a" stroke-width="1.5"/>
+  <path d="M100 108 L104 118 L100 126 L96 118 Z" fill="#ff4d8d" opacity="0.6"/>
+  <!-- laser beam -->
+  <path d="M128 118 L188 112 L188 124 L128 130 Z" fill="#ffe066" stroke="#1a1a1a" stroke-width="1.5"/>
+  <path d="M132 120 L180 116 L180 120 L132 124 Z" fill="#fff" opacity="0.7"/>
+  <rect x="20" y="248" width="160" height="8" rx="2" fill="#ddd"/>
+</svg>

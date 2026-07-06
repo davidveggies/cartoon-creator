@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" fill="none" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+  <ellipse cx="100" cy="220" rx="55" ry="8" fill="#1a1a1a" opacity="0.1" stroke="none"/>
+  <!-- big case on back -->
+  <rect x="118" y="95" width="62" height="88" rx="8" fill="#4a5568" stroke="#1a1a1a"/>
+  <rect x="124" y="101" width="50" height="76" rx="4" fill="#718096" stroke="#1a1a1a" stroke-width="2"/>
+  <path d="M130 115 L168 115 M130 130 L168 130 M130 145 L168 145" stroke="#1a1a1a" stroke-width="1.5"/>
+  <rect x="138" y="108" width="24" height="8" rx="2" fill="#ffd700" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- star body -->
+  <path d="M88 55 L98 82 L128 82 L104 100 L114 128 L88 112 L62 128 L72 100 L48 82 L78 82 Z" fill="#7c3aed" stroke="#1a1a1a"/>
+  <!-- gold + ruby chest -->
+  <circle cx="88" cy="95" r="14" fill="#ffd700" stroke="#1a1a1a"/>
+  <path d="M88 84 L96 95 L88 106 L80 95 Z" fill="#e0115f" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- face -->
+  <circle cx="78" cy="88" r="5" fill="#fff" stroke="#1a1a1a"/>
+  <circle cx="98" cy="88" r="5" fill="#fff" stroke="#1a1a1a"/>
+  <circle cx="79" cy="88" r="2" fill="#1a1a1a" stroke="none"/>
+  <circle cx="99" cy="88" r="2" fill="#1a1a1a" stroke="none"/>
+  <path d="M82 102 Q88 107 94 102" fill="none"/>
+  <!-- legs -->
+  <path d="M72 128 L68 155 M88 130 L88 158 M104 130 L108 155" fill="none" stroke-width="3"/>
+  <!-- small laser charge -->
+  <path d="M48 95 L20 92 L20 98 L48 101 Z" fill="#ffe066" stroke="#1a1a1a" stroke-width="1.5"/>
+</svg>

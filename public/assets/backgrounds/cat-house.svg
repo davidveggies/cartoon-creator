@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <rect width="960" height="540" fill="#fff8e7"/>
+  <path d="M0 400 L960 400" stroke-width="3"/>
+  <path d="M120 400 L120 180 L480 120 L840 180 L840 400" fill="#ffd6a5" stroke="#1a1a1a" stroke-width="3"/>
+  <path d="M480 120 L480 400" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="200" y="260" width="60" height="80" fill="#fff" stroke="#1a1a1a"/>
+  <rect x="700" y="260" width="60" height="80" fill="#fff" stroke="#1a1a1a"/>
+  <ellipse cx="300" cy="370" rx="12" ry="8" fill="#1a1a1a" stroke="#1a1a1a"/>
+  <ellipse cx="340" cy="365" rx="10" ry="7" fill="#1a1a1a" stroke="#1a1a1a"/>
+  <ellipse cx="380" cy="372" rx="11" ry="8" fill="#1a1a1a" stroke="#1a1a1a"/>
+  <ellipse cx="420" cy="368" rx="10" ry="7" fill="#1a1a1a" stroke="#1a1a1a"/>
+  <ellipse cx="520" cy="370" rx="12" ry="8" fill="#1a1a1a" stroke="#1a1a1a"/>
+  <ellipse cx="560" cy="365" rx="10" ry="7" fill="#1a1a1a" stroke="#1a1a1a"/>
+  <ellipse cx="600" cy="372" rx="11" ry="8" fill="#1a1a1a" stroke="#1a1a1a"/>
+  <ellipse cx="640" cy="368" rx="10" ry="7" fill="#1a1a1a" stroke="#1a1a1a"/>
+  <ellipse cx="680" cy="370" rx="12" ry="8" fill="#1a1a1a" stroke="#1a1a1a"/>
+  <ellipse cx="720" cy="365" rx="10" ry="7" fill="#1a1a1a" stroke="#1a1a1a"/>
+  <text x="480" y="70" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="28" fill="#1a1a1a" stroke="none">The Cat House</text>
+</svg>
