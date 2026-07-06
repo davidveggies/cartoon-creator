@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <rect width="960" height="540" fill="#2c3e50"/>
+  <rect y="0" width="960" height="280" fill="#1a2530"/>
+  <path d="M80 40 L120 120 L60 80 L140 100 L90 160" fill="#ffe066" stroke="#f5c842" stroke-width="2" opacity="0.9"/>
+  <line x1="40" y1="60" x2="55" y2="200" stroke="#6bcbff" stroke-width="1.5" opacity="0.35"/>
+  <line x1="120" y1="30" x2="128" y2="220" stroke="#6bcbff" stroke-width="1.5" opacity="0.35"/>
+  <line x1="200" y1="50" x2="210" y2="240" stroke="#6bcbff" stroke-width="1.5" opacity="0.35"/>
+  <line x1="320" y1="20" x2="330" y2="250" stroke="#6bcbff" stroke-width="1.5" opacity="0.35"/>
+  <line x1="480" y1="40" x2="488" y2="230" stroke="#6bcbff" stroke-width="1.5" opacity="0.35"/>
+  <line x1="640" y1="25" x2="650" y2="245" stroke="#6bcbff" stroke-width="1.5" opacity="0.35"/>
+  <line x1="780" y1="55" x2="790" y2="235" stroke="#6bcbff" stroke-width="1.5" opacity="0.35"/>
+  <line x1="880" y1="35" x2="888" y2="210" stroke="#6bcbff" stroke-width="1.5" opacity="0.35"/>
+  <path d="M0 400 L960 400" stroke-width="3" stroke="#0f1419"/>
+  <path d="M120 400 L120 180 L480 120 L840 180 L840 400" fill="#4a5568" stroke="#1a1a1a" stroke-width="3"/>
+  <path d="M480 120 L480 400" stroke-width="2" stroke-dasharray="6 4" opacity="0.5"/>
+  <rect x="200" y="260" width="60" height="80" fill="#2d3748" stroke="#1a1a1a"/>
+  <rect x="700" y="260" width="60" height="80" fill="#2d3748" stroke="#1a1a1a"/>
+  <text x="480" y="70" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="28" fill="#e2e8f0" stroke="none">The Cat House  Thunderstorm!</text>
+</svg>

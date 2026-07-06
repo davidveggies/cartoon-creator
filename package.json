@@ -5,8 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:api": "npx tsx scripts/dev-api.ts",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "voices": "npx tsx scripts/generate-voices.ts"
   },
   "dependencies": {
     "gsap": "^3.12.7"

@@ -7,7 +7,12 @@ export type EasingName =
   | "elastic.out"
   | "bounce.out";
 
-export type CharacterPosition = "left" | "center" | "right";
+export type CharacterPosition =
+  | "left"
+  | "inner-left"
+  | "center"
+  | "inner-right"
+  | "right";
 
 export interface CharacterDef {
   id: string;
@@ -17,6 +22,12 @@ export interface CharacterDef {
   size?: "sm" | "md" | "lg";
   /** Optional alternate expressions keyed by name */
   expressions?: Record<string, string>;
+  /** Distinct cartoon voice */
+  voice?: {
+    preset?: string;
+    pitch?: number;
+    rate?: number;
+  };
 }
 
 export interface SceneBackground {
@@ -24,6 +35,8 @@ export interface SceneBackground {
   color?: string;
   /** CSS gradient fallback */
   gradient?: string;
+  /** Where characters stand on the stage (default 8%) */
+  groundLine?: string;
 }
 
 export interface TitleBeat {
@@ -38,6 +51,8 @@ export interface DialogueBeat {
   speaker?: string;
   characterId?: string;
   text: string;
+  /** How long the line stays on screen (ms). Auto-calculated if omitted. */
+  duration?: number;
   /** Highlight which character is talking */
   focusCharacter?: string;
   /** Optional expression change */
@@ -51,9 +66,11 @@ export interface ActionBeat {
     | "enter"
     | "exit"
     | "move"
+    | "march"
     | "bounce"
     | "shake"
     | "jump"
+    | "dance"
     | "fadeIn"
     | "fadeOut"
     | "setExpression";
@@ -65,7 +82,7 @@ export interface ActionBeat {
 
 export interface TransitionBeat {
   type: "transition";
-  style: "fade" | "wipe" | "flash";
+  style: "fade" | "wipe" | "flash" | "pageFlip";
   duration?: number;
 }
 
@@ -80,13 +97,58 @@ export interface PanelBeat {
   caption?: string;
 }
 
+export interface CrowdBeat {
+  type: "crowd";
+  /** Visual cat sprites (story may say 10,000 — we show a lively crowd) */
+  count?: number;
+  images?: string[];
+  duration?: number;
+  /** Apply orange styling to the whole crowd */
+  style?: "orange";
+}
+
+export interface SfxBeat {
+  type: "sfx";
+  sfx: "thunder" | "screech" | "carStop" | "boing" | "whoosh" | "meow" | "crowd" | "title";
+  repeat?: number;
+  interval?: number;
+}
+
+export interface WeatherBeat {
+  type: "weather";
+  effect: "thunderstorm" | "clear";
+  /** Seconds to hold before resolving (storm keeps running unless cleared). */
+  duration?: number;
+}
+
+export interface RainDogsBeat {
+  type: "rainDogs";
+  /** How many glowing dogs fall during the beat */
+  count?: number;
+  /** Seconds the dog rain lasts */
+  duration?: number;
+}
+
+export interface MusicBeat {
+  type: "music";
+  track: "happy-dance";
+  loop?: boolean;
+  /** 0–1 playback volume (default 0.65) */
+  volume?: number;
+}
+
 export type Beat =
   | TitleBeat
   | DialogueBeat
   | ActionBeat
   | TransitionBeat
   | PauseBeat
-  | PanelBeat;
+  | PanelBeat
+  | CrowdBeat
+  | SfxBeat
+  | WeatherBeat
+  | RainDogsBeat
+  | MusicBeat;
 
 export interface Scene {
   id: string;

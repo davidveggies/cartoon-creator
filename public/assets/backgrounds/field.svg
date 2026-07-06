@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <rect width="960" height="540" fill="#87ceeb"/>
+  <rect y="320" width="960" height="220" fill="#78c850"/>
+  <path d="M0 320 Q240 300 480 318 Q720 336 960 320" fill="#8fd96a" stroke="none"/>
+  <circle cx="820" cy="90" r="48" fill="#ffe066" stroke="#f5c842" stroke-width="3"/>
+  <ellipse cx="120" cy="380" rx="55" ry="18" fill="#5cb85c" stroke="none" opacity="0.5"/>
+  <ellipse cx="400" cy="400" rx="70" ry="20" fill="#5cb85c" stroke="none" opacity="0.5"/>
+  <ellipse cx="720" cy="385" rx="60" ry="18" fill="#5cb85c" stroke="none" opacity="0.5"/>
+  <!-- red flowers -->
+  <line x1="180" y1="340" x2="180" y2="318" stroke="#2d8a2d" stroke-width="3"/>
+  <circle cx="180" cy="310" r="10" fill="#ff6b6b" stroke="#e05555"/>
+  <circle cx="172" cy="304" r="7" fill="#ff8787" stroke="none"/>
+  <circle cx="188" cy="304" r="7" fill="#ff8787" stroke="none"/>
+  <circle cx="180" cy="298" r="7" fill="#ff8787" stroke="none"/>
+  <!-- yellow flowers -->
+  <line x1="320" y1="350" x2="320" y2="328" stroke="#2d8a2d" stroke-width="3"/>
+  <circle cx="320" cy="320" r="11" fill="#ffd93d" stroke="#e6c235"/>
+  <circle cx="310" cy="314" r="7" fill="#ffe566" stroke="none"/>
+  <circle cx="330" cy="314" r="7" fill="#ffe566" stroke="none"/>
+  <circle cx="320" cy="308" r="7" fill="#ffe566" stroke="none"/>
+  <!-- blue flowers -->
+  <line x1="520" y1="345" x2="520" y2="323" stroke="#2d8a2d" stroke-width="3"/>
+  <circle cx="520" cy="315" r="10" fill="#6bcbff" stroke="#4aa8e0"/>
+  <circle cx="512" cy="309" r="7" fill="#8fd9ff" stroke="none"/>
+  <circle cx="528" cy="309" r="7" fill="#8fd9ff" stroke="none"/>
+  <circle cx="520" cy="303" r="7" fill="#8fd9ff" stroke="none"/>
+  <!-- pink flowers -->
+  <line x1="680" y1="338" x2="680" y2="316" stroke="#2d8a2d" stroke-width="3"/>
+  <circle cx="680" cy="308" r="10" fill="#ff9ff3" stroke="#e07ad0"/>
+  <circle cx="672" cy="302" r="7" fill="#ffb8f7" stroke="none"/>
+  <circle cx="688" cy="302" r="7" fill="#ffb8f7" stroke="none"/>
+  <circle cx="680" cy="296" r="7" fill="#ffb8f7" stroke="none"/>
+  <!-- purple flowers -->
+  <line x1="840" y1="352" x2="840" y2="330" stroke="#2d8a2d" stroke-width="3"/>
+  <circle cx="840" cy="322" r="10" fill="#b197fc" stroke="#9775e6"/>
+  <circle cx="832" cy="316" r="7" fill="#c9b5ff" stroke="none"/>
+  <circle cx="848" cy="316" r="7" fill="#c9b5ff" stroke="none"/>
+  <circle cx="840" cy="310" r="7" fill="#c9b5ff" stroke="none"/>
+  <!-- more small flowers -->
+  <circle cx="260" cy="365" r="6" fill="#ff6b6b" stroke="none"/>
+  <circle cx="450" cy="370" r="5" fill="#ffd93d" stroke="none"/>
+  <circle cx="600" cy="368" r="6" fill="#ff9ff3" stroke="none"/>
+  <circle cx="780" cy="372" r="5" fill="#6bcbff" stroke="none"/>
+  <text x="480" y="70" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="28" fill="#1a1a1a" stroke="none">The Flower Field</text>
+</svg>

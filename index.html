@@ -3,42 +3,125 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rufus & Archibald</title>
+    <title>Cartoon Creator</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Fredoka:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
     <div id="app">
-      <div id="stage">
-        <div id="background"></div>
-        <div id="characters"></div>
-        <div id="overlay"></div>
-        <div id="dialogue-box" hidden>
-          <div id="speaker"></div>
-          <p id="dialogue-text"></p>
-          <button id="next-btn" type="button">Next ▶</button>
-        </div>
-        <div id="title-card" hidden>
-          <h1 id="title-text"></h1>
-          <p id="subtitle-text"></p>
-        </div>
-        <div id="story-panel" hidden>
-          <img id="story-panel-img" alt="" />
-          <p id="story-panel-caption"></p>
-          <button id="panel-next-btn" type="button">Continue ▶</button>
-        </div>
-      </div>
-      <div id="controls">
-        <button id="play-btn" type="button">▶ Play</button>
-        <button id="pause-btn" type="button" hidden>⏸ Pause</button>
-        <span id="scene-label">Scene 0 / 0</span>
+      <header id="site-header">
+        <h1>Cartoon Creator</h1>
+        <p>Write a script, pick your characters, and watch your animated short come to life.</p>
+      </header>
+
+      <div id="workspace">
+        <aside id="creator-panel">
+          <label class="field">
+            Cartoon title
+            <input id="cartoon-title" type="text" value="My Cartoon" maxlength="80" />
+          </label>
+
+          <div id="script-mode-toggle">
+            <button id="mode-screenplay" type="button" class="mode-btn active">Screenplay</button>
+            <button id="mode-idea" type="button" class="mode-btn">Story idea</button>
+          </div>
+
+          <label class="field">
+            <span id="script-label">Screenplay</span>
+            <textarea
+              id="script-input"
+              rows="12"
+              spellcheck="true"
+              placeholder="TONY: Why are you threatening me?&#10;SAL: Because you have a shovel."
+            ></textarea>
+          </label>
+
+          <div class="creator-row">
+            <button id="load-template-btn" type="button" class="secondary small">Load example format</button>
+          </div>
+
+          <section class="creator-section">
+            <div class="section-head">
+              <h2>Cast</h2>
+              <button id="add-cast-btn" type="button" class="secondary small">+ Add character</button>
+            </div>
+            <div id="cast-list"></div>
+          </section>
+
+          <section class="creator-section">
+            <div class="section-head">
+              <h2>Background</h2>
+              <button id="pick-bg-btn" type="button" class="secondary small">Pick from gallery</button>
+            </div>
+            <div id="bg-preview"></div>
+          </section>
+
+          <p id="creator-error" hidden></p>
+
+          <button id="make-cartoon-btn" type="button" class="primary wide">Make Cartoon</button>
+        </aside>
+
+        <main id="player-panel">
+          <div id="cartoon-frame">
+            <div id="scene-viewport">
+              <div id="stage">
+                <div id="background"></div>
+                <div id="weather"></div>
+                <div id="cat-crowd"></div>
+                <div id="characters"></div>
+                <div id="overlay"></div>
+                <div id="stage-welcome">
+                  <p>Your cartoon will appear here.</p>
+                  <p class="hint">Fill in the script and cast, then click <strong>Make Cartoon</strong>.</p>
+                </div>
+                <div id="dialogue-box" hidden>
+                  <div id="speaker"></div>
+                  <p id="dialogue-text"></p>
+                </div>
+                <div id="title-card" hidden>
+                  <h1 id="title-text"></h1>
+                  <p id="subtitle-text"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="controls">
+            <div id="control-buttons">
+              <button id="restart-btn" type="button">⟲ From start</button>
+              <button id="pause-btn" type="button">⏸ Pause</button>
+              <button id="play-btn" type="button">▶ Play</button>
+              <button id="prev-scene-btn" type="button" class="secondary">◀ Prev scene</button>
+              <button id="next-scene-btn" type="button" class="secondary">Next scene ▶</button>
+              <button id="sound-btn" type="button" class="secondary" aria-pressed="true">🔊 Sound on</button>
+              <button id="record-btn" type="button" class="secondary">⏺ Record video</button>
+            </div>
+            <label id="scene-select-wrap" for="scene-select">
+              Scene
+              <select id="scene-select" aria-label="Jump to scene"></select>
+            </label>
+            <span id="scene-name">Scene</span>
+            <span id="scene-label">—</span>
+          </div>
+        </main>
       </div>
     </div>
-    <script type="module" src="/src/main.ts"></script>
+
+    <div id="gallery-modal" hidden>
+      <div id="gallery-dialog">
+        <div class="gallery-head">
+          <h2>Pick an image</h2>
+          <button id="gallery-close" type="button" aria-label="Close">✕</button>
+        </div>
+        <div id="gallery-grid"></div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/creator-main.ts"></script>
   </body>
 </html>
